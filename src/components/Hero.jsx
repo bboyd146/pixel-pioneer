@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="hero-gradient py-20">
+    <section className="hero-gradient py-80">
       <div className="container mx-auto px-4 text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
           <span className="text-indigo-500">Elevate</span> Your Digital Presence
