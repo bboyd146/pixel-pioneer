@@ -1,22 +1,11 @@
 import React, { useState } from "react";
 
-/**
- * Replace:
- * - FORM_ID (already filled below)
- * - ENTRY_ID_NAME, ENTRY_ID_EMAIL, ENTRY_ID_SERVICE, ENTRY_ID_MESSAGE
- *
- * How to get entry IDs: Form editor → ⋮ → Get pre-filled link → copy query params (entry.xxxxx=)
- */
-//docs.google.com/forms/d/e/1FAIpQLSenp0yRQ_PGhphAlZPs4q1jtJLh8UiXZC7FiIFHPUurZtC8HQ/viewform?usp=pp_url&entry.2116052852=Your+Name&entry.1558582620=email@email.com&entry.1060472253=Basic+Static+Page&entry.288713975=I+want+a+landing+page+for+my+pest+control+services.
 export default function Contact() {
-  // ======= EDIT THESE =======
   const FORM_ID = "1FAIpQLSenp0yRQ_PGhphAlZPs4q1jtJLh8UiXZC7FiIFHPUurZtC8HQ";
-  // Replace the ENTRY_ID_* placeholders with the real entry IDs from your prefilled link
   const ENTRY_ID_NAME = "entry.2116052852";
   const ENTRY_ID_EMAIL = "entry.1558582620";
   const ENTRY_ID_SERVICE = "entry.1060472253";
   const ENTRY_ID_MESSAGE = "entry.288713975";
-  // ==========================
 
   const ENDPOINT = `https://docs.google.com/forms/d/e/${FORM_ID}/formResponse`;
 
