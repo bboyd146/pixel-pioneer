@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import feather from "feather-icons";
-
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
+import Commerce from "./components/Commerce";
 import Services from "./components/Services";
 import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
@@ -25,7 +25,8 @@ export default function App() {
       if (el) el.scrollIntoView({ behavior: "smooth" });
     };
     anchors.forEach((a) => a.addEventListener("click", handler));
-    return () => anchors.forEach((a) => a.removeEventListener("click", handler));
+    return () =>
+      anchors.forEach((a) => a.removeEventListener("click", handler));
   }, []);
 
   return (
@@ -34,6 +35,7 @@ export default function App() {
       <main>
         <Hero />
         <Services />
+        <Commerce />
         <Pricing />
         <Contact />
       </main>

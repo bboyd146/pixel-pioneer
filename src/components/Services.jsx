@@ -1,5 +1,4 @@
 import React from "react";
-
 export default function Services() {
   return (
     <section id="services" className="py-20">
@@ -8,7 +7,6 @@ export default function Services() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our <span className="text-indigo-500">Services</span></h2>
           <p className="text-gray-400 max-w-2xl mx-auto">Tailored solutions for every business need and budget</p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Service 1 */}
           <div className="bg-gray-800 rounded-xl p-8 service-card transition duration-300">
@@ -20,16 +18,16 @@ export default function Services() {
               Perfect for startups and personal brands needing a simple online presence.
             </p>
             <ul className="space-y-2 mb-6">
-              <li className="flex items-start">
-                <i data-feather="check" className="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+              <li className="flex items-center">
+                <i data-feather="check" className="text-green-500 mr-3 w-4 h-4"></i>
                 <span>Simple, clean layout</span>
               </li>
-              <li className="flex items-start">
-                <i data-feather="check" className="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+              <li className="flex items-center">
+                <i data-feather="check" className="text-green-500 mr-3 w-4 h-4"></i>
                 <span>Mobile responsive</span>
               </li>
-              <li className="flex items-start">
-                <i data-feather="check" className="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+              <li className="flex items-center">
+                <i data-feather="check" className="text-green-500 mr-3 w-4 h-4"></i>
                 <span>Single section focus</span>
               </li>
             </ul>
@@ -49,24 +47,24 @@ export default function Services() {
               Ideal for established businesses looking to expand their digital footprint.
             </p>
             <ul className="space-y-2 mb-6">
-              <li className="flex items-start">
-                <i data-feather="check" className="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+              <li className="flex items-center">
+                <i data-feather="check" className="text-green-500 mr-3 w-4 h-4"></i>
                 <span>Multiple sections</span>
               </li>
-              <li className="flex items-start">
-                <i data-feather="check" className="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+              <li className="flex items-center">
+                <i data-feather="check" className="text-green-500 mr-3 w-4 h-4"></i>
                 <span>Fully responsive</span>
               </li>
-              <li className="flex items-start">
-                <i data-feather="check" className="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+              <li className="flex items-center">
+                <i data-feather="check" className="text-green-500 mr-3 w-4 h-4"></i>
                 <span>Contact form integration</span>
               </li>
-              <li className="flex items-start">
-                <i data-feather="check" className="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+              <li className="flex items-center">
+                <i data-feather="check" className="text-green-500 mr-3 w-4 h-4"></i>
                 <span>SEO optimization</span>
               </li>
-              <li className="flex items-start">
-                <i data-feather="check" className="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+              <li className="flex items-center">
+                <i data-feather="check" className="text-green-500 mr-3 w-4 h-4"></i>
                 <span>Analytics setup</span>
               </li>
             </ul>
@@ -83,24 +81,24 @@ export default function Services() {
               High-performance pages designed to maximize conversions and revenue.
             </p>
             <ul className="space-y-2 mb-6">
-              <li className="flex items-start">
-                <i data-feather="check" className="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+              <li className="flex items-center">
+                <i data-feather="check" className="text-green-500 mr-3 w-4 h-4"></i>
                 <span>Advanced animations</span>
               </li>
-              <li className="flex items-start">
-                <i data-feather="check" className="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+              <li className="flex items-center">
+                <i data-feather="check" className="text-green-500 mr-3 w-4 h-4"></i>
                 <span>CRM/API integrations</span>
               </li>
-              <li className="flex items-start">
-                <i data-feather="check" className="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+              <li className="flex items-center">
+                <i data-feather="check" className="text-green-500 mr-3 w-4 h-4"></i>
                 <span>Booking/payment features</span>
               </li>
-              <li className="flex items-start">
-                <i data-feather="check" className="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+              <li className="flex items-center">
+                <i data-feather="check" className="text-green-500 mr-3 w-4 h-4"></i>
                 <span>Conversion optimization</span>
               </li>
-              <li className="flex items-start">
-                <i data-feather="check" className="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+              <li className="flex items-center">
+                <i data-feather="check" className="text-green-500 mr-3 w-4 h-4"></i>
                 <span>Performance focused</span>
               </li>
             </ul>

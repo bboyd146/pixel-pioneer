@@ -129,6 +129,9 @@ export default function Contact() {
                 <option>Basic Static Page</option>
                 <option>Professional Business Page</option>
                 <option>Premium Conversion Page</option>
+                <option>Basic E-Commerce</option>
+                <option>Advanced Store</option>
+                <option>Enterprise & Custom</option>
               </select>
             </div>
 
