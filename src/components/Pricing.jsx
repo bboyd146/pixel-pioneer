@@ -48,7 +48,7 @@ return (
                             <td className="py-4 px-4">Contact Form</td>
                             <td className="text-center py-4 px-4">
                                 <div className="flex justify-center items-center h-full">
-                                    <i data-feather="x" className="w-5 h-5"></i>
+                                    <i data-feather="check" className="w-5 h-5"></i>
                                 </div>
                             </td>
                             <td className="text-center py-4 px-4">
