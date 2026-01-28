@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AnimatedSection from "./AnimatedSection";
 
 export default function Contact() {
   const FORM_ID = "1FAIpQLSenp0yRQ_PGhphAlZPs4q1jtJLh8UiXZC7FiIFHPUurZtC8HQ";
@@ -69,11 +70,17 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto bg-gray-800 rounded-xl p-8 md:p-12">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+    <AnimatedSection>
+<section
+  id="contact"
+className="relative py-24 bg-gradient-to-t from-transparent via-indigo-500/10 to-transparent"
+>
+<div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_85%,rgba(99,102,241,0.28),transparent_50%)]" />
+
+        <div className="relative z-10 container mx-auto px-4">
+          <div className="max-w-4xl mx-auto bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl p-8 md:p-12">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Ready to <span className="text-indigo-500">Start?</span>
             </h2>
             <p className="text-gray-400">
@@ -181,6 +188,9 @@ export default function Contact() {
           </p>
         </div>
       </div>
+      <div className="pointer-events-none absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-[#0b0f1a]" />
+
     </section>
+    </AnimatedSection>
   );
 }

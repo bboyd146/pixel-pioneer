@@ -10,3 +10,32 @@
 .glow-on-hover:hover {
   box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
 }
+.glow-text {
+  text-shadow: 0 0 25px rgba(99, 102, 241, 0.6);
+}
+.service-card {
+  backdrop-filter: blur(6px);
+}
+.service-card:hover {
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+}
+.commerce-card:hover {
+  box-shadow: 0 18px 36px rgba(99, 102, 241, 0.15);
+}
+.texture-overlay {
+  background-image:
+    radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+    radial-gradient(rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 3px 3px, 6px 6px;
+  background-position: 0 0, 1px 1px;
+}
+.frosted-glass {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-40px); }
+  100% { transform: translateY(0); }
+}
+
