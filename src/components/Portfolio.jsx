@@ -51,7 +51,7 @@ const projects = [
     type: "Local Service Business",
     description:
       "A professional pest control website focused on lead generation, mobile usability, and local SEO.",
-    image: "/projects/alln1.webp",
+    image: "/assets/projects/alln1pestcontrol.png",
     link: "https://alln1pestcontrolmanagement.com",
     features: [
       "Mobile responsive design",
@@ -65,7 +65,7 @@ const projects = [
     type: "CPA / Professional Services",
     description:
       "A professional CPA website built to showcase services, generate consultations, and establish trust.",
-    image: "/projects/gibson.webp",
+    image: "/assets/projects/gibsontaxcpa.png",
     link: "https://gibsontaxcpa.com",
     features: [
       "Custom service pages",
@@ -79,7 +79,7 @@ const projects = [
     type: "Financial Forensics / Consulting",
     description:
       "Financial forensics and accounting data cleanup for business owners and attorneys dealing with unclear, disorganized, or suspicious financial activity.",
-    image: "/projects/flatfeeconsulting.webp",
+    image: "/assets/projects/flatfeeconsulting.png",
     link: "https://flatfeeconsulting.com",
     features: [
       "WordPress CMS for easy updates",
