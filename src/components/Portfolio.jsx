@@ -3,6 +3,10 @@
 import React from "react";
 import AnimatedSection from "./AnimatedSection";
 import { motion } from "framer-motion";
+import alln1pestcontrol from "../assets/projects/alln1pestcontrol.png";
+import gibsontaxcpa from "../assets/projects/gibsontaxcpa.png";
+import flatfeeconsulting from "../assets/projects/flatfeeconsulting.png";
+import { g } from "framer-motion/client";
 
 const containerVariants = {
   hidden: {},
@@ -51,7 +55,7 @@ const projects = [
     type: "Local Service Business",
     description:
       "A professional pest control website focused on lead generation, mobile usability, and local SEO.",
-    image: "/assets/projects/alln1pestcontrol.png",
+    image: alln1pestcontrol,
     link: "https://alln1pestcontrolmanagement.com",
     features: [
       "Mobile responsive design",
@@ -65,7 +69,7 @@ const projects = [
     type: "CPA / Professional Services",
     description:
       "A professional CPA website built to showcase services, generate consultations, and establish trust.",
-    image: "/assets/projects/gibsontaxcpa.png",
+    image: gibsontaxcpa,
     link: "https://gibsontaxcpa.com",
     features: [
       "Custom service pages",
@@ -79,7 +83,7 @@ const projects = [
     type: "Financial Forensics / Consulting",
     description:
       "Financial forensics and accounting data cleanup for business owners and attorneys dealing with unclear, disorganized, or suspicious financial activity.",
-    image: "/assets/projects/flatfeeconsulting.png",
+    image: flatfeeconsulting,
     link: "https://flatfeeconsulting.com",
     features: [
       "WordPress CMS for easy updates",

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import feather from "feather-icons";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
+import Portfolio from "./components/Portfolio";
 import Commerce from "./components/Commerce";
 import Services from "./components/Services";
 import Pricing from "./components/Pricing";
@@ -59,6 +60,7 @@ export default function App() {
 
       <main className="relative z-10">
         <Hero />
+        <Portfolio />
         <Services />
         <Commerce />
         <Pricing />
