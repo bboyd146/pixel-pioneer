@@ -3,7 +3,7 @@ import feather from "feather-icons";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Portfolio from "./components/Portfolio";
-import Commerce from "./components/Commerce";
+// import Commerce from "./components/Commerce";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Services from "./components/Services";
 import Pricing from "./components/Pricing";
@@ -64,7 +64,7 @@ export default function App() {
         <Portfolio />
         <Services />
         <WhyChooseUs />
-        <Commerce />
+        {/* <Commerce /> */}
         <Pricing />
         <Contact />
       <Footer />

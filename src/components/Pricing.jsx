@@ -240,7 +240,7 @@ export default function Pricing() {
             className="mx-auto my-20 h-px w-100 bg-gradient-to-r from-transparent via-indigo-500/60 to-transparent origin-left"
           />
 
-          {/* E-commerce pricing table */}
+          {/* E-commerce pricing table
           <div className="overflow-x-auto transparent">
             <h3 className="text-2xl font-semibold text-center mb-6">
               <span className="text-indigo-500">E-Commerce</span> Pricing
@@ -359,7 +359,7 @@ export default function Pricing() {
                 <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-150%] hover:translate-x-[150%] transition-transform duration-700" />
               </motion.a>
             </motion.div>
-          </div>
+          </div> */}
         </div>
       </section>
     </AnimatedSection>
