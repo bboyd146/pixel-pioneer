@@ -7,6 +7,7 @@ import Portfolio from "./components/Portfolio";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Services from "./components/Services";
 import Pricing from "./components/Pricing";
+import FreeAudit from "./components/FreeAudit";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -66,6 +67,7 @@ export default function App() {
         <WhyChooseUs />
         {/* <Commerce /> */}
         <Pricing />
+        <FreeAudit />
         <Contact />
       <Footer />
       </main>
