@@ -47,34 +47,37 @@ const dividerVariants = {
 
 const reasons = [
   {
-    title: "Built for Leads",
+    icon: "phone-call",
+    title: "More Leads",
     description:
-      "Your website should do more than look good. We design pages around calls, form submissions, and customer action.",
+      "Clear calls-to-action and conversion-focused layouts designed to generate inquiries.",
   },
   {
-    title: "Mobile-First Design",
+    icon: "smartphone",
+    title: "Mobile Optimized",
     description:
-      "Most customers search from their phones, so every site is built to look clean, load fast, and convert on mobile.",
+      "Most customers visit from mobile devices. Every site is built mobile-first.",
   },
   {
-    title: "SEO-Ready Structure",
-    description:
-      "We set up clean headings, page structure, metadata, and local keyword targeting to help your site get found.",
+    icon: "search",
+    title: "Google-Friendly",
+    description: "SEO-ready structure to help your business get found online.",
   },
   {
-    title: "Fast Turnaround",
-    description:
-      "Get a professional website launched without months of delays, bloated agency processes, or unclear timelines.",
+    icon: "zap",
+    title: "Fast Loading",
+    description: "Performance-focused websites that keep visitors engaged.",
   },
   {
-    title: "Direct Communication",
-    description:
-      "You work directly with the developer building your site, not a sales rep or account manager.",
+    icon: "shield",
+    title: "Reliable Support",
+    description: "Ongoing maintenance and support available after launch.",
   },
   {
-    title: "No Agency Overhead",
+    icon: "users",
+    title: "Local Business Focused",
     description:
-      "Professional quality without the inflated pricing of a large agency.",
+      "Built specifically for service businesses that need more calls and customers.",
   },
 ];
 
@@ -120,9 +123,10 @@ export default function WhyChooseUs() {
                 className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl p-8 transition duration-300 hover:border-indigo-500/40 hover:bg-white/10"
               >
                 <div className="w-14 h-14 bg-indigo-500/10 rounded-lg flex items-center justify-center mb-6">
-                  <span className="text-indigo-500 font-bold text-xl">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
+                  <i
+                    data-feather={reason.icon}
+                    className="text-indigo-500 w-7 h-7"
+                  ></i>
                 </div>
 
                 <h3 className="text-xl font-bold mb-3">{reason.title}</h3>
