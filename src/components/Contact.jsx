@@ -181,8 +181,8 @@ className="relative py-24 bg-gradient-to-t from-transparent via-indigo-500/10 to
 
           <p className="mt-4 text-sm text-gray-400">
             If you prefer, email us at{" "}
-            <a className="text-indigo-500" href="mailto:brad.dev25@gmail.com">
-              brad.dev25@gmail.com
+            <a className="text-indigo-500" href="mailto:bradley@pixelpioneer.dev">
+              bradley@pixelpioneer.dev
             </a>
             .
           </p>
