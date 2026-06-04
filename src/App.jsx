@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Portfolio from "./components/Portfolio";
 // import Commerce from "./components/Commerce";
 import WhyChooseUs from "./components/WhyChooseUs";
+import AuditExpectations from "./components/AuditExpectations";
 import Services from "./components/Services";
 import Pricing from "./components/Pricing";
 import FreeAudit from "./components/FreeAudit";
@@ -76,6 +77,7 @@ export default function App() {
         {/* <Commerce /> */}
         <Pricing />
         <FreeAudit />
+        <AuditExpectations />
         <Contact />
         <Footer />
       </main>
