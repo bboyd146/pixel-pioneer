@@ -63,7 +63,7 @@ export default function WebsiteDesignHouston() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.a
-              href="/#contact"
+              href="/#free-audit"
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.97 }}
               className="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-4 rounded-lg font-medium"
