@@ -48,7 +48,11 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="pointer-events-none absolute bottom-0 left-0 z-20 w-full h-32 bg-gradient-to-b from-transparent to-[#0b0f1a]" />
-    </section>
+{/* Deep hero fade */}
+<div className="pointer-events-none absolute bottom-[-1px] left-0 z-20 w-full h-72 bg-gradient-to-b from-transparent via-[#0b0f1a]/85 to-[#0b0f1a]" />
+
+{/* Soft dark blur */}
+<div className="pointer-events-none absolute bottom-[-80px] left-0 z-20 w-full h-56 bg-[#0b0f1a] blur-3xl opacity-90" />
+</section>
   );
 }

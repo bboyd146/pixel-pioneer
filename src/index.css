@@ -1,5 +1,34 @@
 @import "tailwindcss";
 
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #0b0f1a;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #0b0f1a;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: #0b0f1a;
+}
+
+#root {
+  min-height: 100vh;
+  background: #0b0f1a;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
 .hero-gradient {
   background: linear-gradient(135deg, rgba(99,102,241,0.15) 0%, rgba(16,185,129,0.1) 100%);
 }

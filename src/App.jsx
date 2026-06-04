@@ -18,19 +18,19 @@ export default function App() {
     feather.replace();
   }, []);
 
-  useEffect(() => {
-    const anchors = document.querySelectorAll('a[href^="#"]');
-    const handler = (e) => {
-      const href = e.currentTarget.getAttribute("href");
-      if (!href || href === "#") return;
-      e.preventDefault();
-      const el = document.querySelector(href);
-      if (el) el.scrollIntoView({ behavior: "smooth" });
-    };
-    anchors.forEach((a) => a.addEventListener("click", handler));
-    return () =>
-      anchors.forEach((a) => a.removeEventListener("click", handler));
-  }, []);
+  // useEffect(() => {
+  //   const anchors = document.querySelectorAll('a[href^="#"]');
+  //   const handler = (e) => {
+  //     const href = e.currentTarget.getAttribute("href");
+  //     if (!href || href === "#") return;
+  //     e.preventDefault();
+  //     const el = document.querySelector(href);
+  //     if (el) el.scrollIntoView({ behavior: "smooth" });
+  //   };
+  //   anchors.forEach((a) => a.addEventListener("click", handler));
+  //   return () =>
+  //     anchors.forEach((a) => a.removeEventListener("click", handler));
+  // }, []);
 
   <Helmet>
     <title>Houston Web Developer & Website Design | Pixel Pioneer</title>
@@ -43,30 +43,20 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen bg-[#0b0f1a] text-white overflow-x-hidden texture-overlay">
-      {/* Global atmospheric background */}
-      <div
-        className="pointer-events-none absolute inset-0 animate-[float_30s_linear_infinite]
-"
-      >
-        {/* Base vertical gradient (prevents black bottom) */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0b0f1a] via-[#0e1224] to-[#0b0f1a]" />
+{/* Global atmospheric background */}
+<div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
+  <div className="absolute inset-0 bg-gradient-to-b from-[#0b0f1a] via-[#0e1224] to-[#0b0f1a]" />
 
-        {/* Glow band 1 – top */}
-        <div className="absolute top-[-20%] left-[-20%] w-[800px] h-[800px] bg-indigo-500/25 rounded-full blur-[160px]" />
+  <div className="absolute top-[-25%] left-[-25%] w-[700px] h-[700px] bg-indigo-500/20 rounded-full blur-[150px]" />
 
-        {/* Glow band 2 – upper middle */}
-        <div className="absolute top-[25%] right-[-25%] w-[900px] h-[900px] bg-purple-500/20 rounded-full blur-[180px]" />
+  <div className="absolute top-[20%] right-[-25%] w-[800px] h-[800px] bg-purple-500/15 rounded-full blur-[170px]" />
 
-        {/* Glow band 3 – lower middle */}
-        <div className="absolute top-[55%] left-[-25%] w-[900px] h-[900px] bg-blue-500/20 rounded-full blur-[180px]" />
+  <div className="absolute bottom-[10%] left-[-25%] w-[800px] h-[800px] bg-blue-500/15 rounded-full blur-[170px]" />
 
-        {/* Glow band 4 – bottom */}
-        <div className="absolute bottom-[-20%] right-[-20%] w-[800px] h-[800px] bg-indigo-500/25 rounded-full blur-[160px]" />
+  <div className="absolute bottom-[-25%] right-[-25%] w-[700px] h-[700px] bg-indigo-500/20 rounded-full blur-[150px]" />
 
-        {/* Soft vignette (lighter than before) */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-gray/30" />
-      </div>
-
+  <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/30" />
+</div>
       <Nav />
 
       <main className="relative z-10">
