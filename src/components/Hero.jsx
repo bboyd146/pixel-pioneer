@@ -52,7 +52,7 @@ export default function Hero() {
 <div className="pointer-events-none absolute bottom-[-1px] left-0 z-20 w-full h-72 bg-gradient-to-b from-transparent via-[#0b0f1a]/85 to-[#0b0f1a]" />
 
 {/* Soft dark blur */}
-<div className="pointer-events-none absolute bottom-[-80px] left-0 z-20 w-full h-56 bg-[#0b0f1a] blur-3xl opacity-90" />
+<div className="pointer-events-none absolute bottom-[-80px] left-0 z-20 w-full h-56 bg-[#0b0f1a] blur-xl opacity-90" />
 </section>
   );
 }
