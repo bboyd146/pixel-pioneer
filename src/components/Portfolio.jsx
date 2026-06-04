@@ -211,7 +211,7 @@ export default function Portfolio() {
             </p>
 
             <motion.a
-              href="#contact"
+              href="#free-audit"
               whileHover={{
                 y: -3,
                 boxShadow: "0 20px 40px rgba(99,102,241,0.35)",

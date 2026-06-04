@@ -32,13 +32,13 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a
-            href="#services"
+            href="#portfolio"
             className="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-3 rounded-lg font-medium transition shadow-lg shadow-indigo-500/30"
           >
             View Our Work
           </a>
           <a
-            href="#contact"
+            href="#free-audit"
             className="border border-indigo-400 text-indigo-300 hover:bg-indigo-500/10 px-8 py-3 rounded-lg font-medium transition"
           >
             Get a Free Website Audit
