@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import AnimatedSection from "../components/AnimatedSection";
+import { Helmet } from "react-helmet-async";
 
 const services = [
   "Custom website design",
@@ -24,6 +25,18 @@ const industries = [
 
 export default function WebsiteDesignHouston() {
   return (
+    <>
+  <Helmet>
+    <title>
+      Houston Website Design for Small Businesses | Pixel Pioneer
+    </title>
+
+    <meta
+      name="description"
+      content="Pixel Pioneer provides Houston website design for small businesses, local service companies, and professionals who need more leads, better mobile performance, and stronger Google visibility."
+    />
+  </Helmet>
+
     <main className="bg-[#0b0f1a] text-white overflow-hidden">
       {/* HERO */}
       <section className="relative min-h-[85vh] flex items-center bg-gradient-to-b from-indigo-500/10 via-transparent to-transparent">
@@ -237,5 +250,6 @@ export default function WebsiteDesignHouston() {
         </section>
       </AnimatedSection>
     </main>
+    </>
   );
 }
