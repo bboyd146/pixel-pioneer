@@ -73,10 +73,10 @@ export default function Footer() {
                         <ul className="space-y-2 text-gray-400">
                             <li>
                                 <a
-                                    href="/houston-web-design"
+                                    href="/houston-website-design"
                                     className="hover:text-indigo-500 transition"
                                 >
-                                    Houston Web Design
+                                    Houston Website Design
                                 </a>
                             </li>
 
