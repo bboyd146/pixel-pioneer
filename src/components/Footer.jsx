@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/pixelpioneerlogo.png";
 
 export default function Footer() {
 const year = new Date().getFullYear();
@@ -8,8 +9,10 @@ return (
         <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row justify-between items-center">
                 <div className="flex items-center space-x-2 mb-6 md:mb-0">
-                    <i data-feather="code" className="text-indigo-500"></i>
+                    <a href="/" className="flex items-center space-x-2">
+                    <img src={logo} alt="PixelPioneer logo" className="h-10 w-auto" />
                     <span className="text-xl font-bold">PixelPioneer</span>
+                    </a>
                 </div>
                 <div className="flex space-x-6 mb-6 md:mb-0">
                     <a href="https://github.com/bboyd146" className="hover:text-indigo-500 transition"><i data-feather="github"></i></a>
