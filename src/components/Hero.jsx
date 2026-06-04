@@ -10,10 +10,10 @@ className="relative min-h-[calc(100svh-88px)] flex items-center justify-center o
   <img
   src={heroPoster}
   alt="hero background poster"
-  className="absolute inset-0 w-full h-full object-cover md:hidden"
+  className="absolute inset-0 w-full h-full object-cover "
 />
 
-      <video
+      {/* <video
         className="absolute inset-0 z-0 w-full h-full object-cover hidden md:block"
         src={hero}
         autoPlay
@@ -22,7 +22,7 @@ className="relative min-h-[calc(100svh-88px)] flex items-center justify-center o
         playsInline
         preload="metadata"
         poster={heroPoster}
-      />
+      /> */}
 
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/40 via-black/60 to-[#0b0f1a]" />
 
