@@ -5,6 +5,7 @@ export default function Contact() {
   const FORM_ID = "1FAIpQLSenp0yRQ_PGhphAlZPs4q1jtJLh8UiXZC7FiIFHPUurZtC8HQ";
   const ENTRY_ID_NAME = "entry.2116052852";
   const ENTRY_ID_EMAIL = "entry.1558582620";
+  const ENTRY_ID_WEBSITE = "entry.1763070305";
   const ENTRY_ID_SERVICE = "entry.1060472253";
   const ENTRY_ID_MESSAGE = "entry.288713975";
 
@@ -13,6 +14,7 @@ export default function Contact() {
   const [form, setForm] = useState({
     name: "",
     email: "",
+    website: "",
     service: "",
     message: "",
   });
@@ -25,7 +27,9 @@ export default function Contact() {
   const validate = () => {
     if (!form.name.trim()) return "Please enter your name.";
     if (!form.email.trim()) return "Please enter your email.";
-    if (!/^\S+@\S+\.\S+$/.test(form.email)) return "Please enter a valid email.";
+    if (!/^\S+@\S+\.\S+$/.test(form.email))
+      return "Please enter a valid email.";
+    if (!form.website.trim()) return "Please enter your website URL.";
     if (!form.service) return "Please select a service.";
     if (!form.message.trim()) return "Please tell us about your project.";
     return null;
@@ -46,6 +50,7 @@ export default function Contact() {
       const payload = new FormData();
       payload.append(ENTRY_ID_NAME, form.name);
       payload.append(ENTRY_ID_EMAIL, form.email);
+      payload.append(ENTRY_ID_WEBSITE, form.website);
       payload.append(ENTRY_ID_SERVICE, form.service);
       payload.append(ENTRY_ID_MESSAGE, form.message);
 
@@ -56,141 +61,180 @@ export default function Contact() {
       });
 
       setSubmitting(false);
-      setForm({ name: "", email: "", service: "", message: "" });
-      setStatus({ type: "success", message: "Thanks — your message was sent!" });
+      setForm({ name: "", email: "", website: "", service: "", message: "" });
+      setStatus({
+        type: "success",
+        message: "Thanks — your message was sent!",
+      });
     } catch (err) {
       console.error("Submit error:", err);
       setSubmitting(false);
       setStatus({
         type: "error",
         message:
-          "There was an error submitting the form. You can email us at brad.dev25@gmail.com.",
+          "There was an error submitting the form. You can email us at bradl@pixelpioneer.dev.",
       });
     }
   };
 
   return (
     <AnimatedSection>
-<section
-  id="contact"
-className="relative py-24 bg-gradient-to-t from-transparent via-indigo-500/10 to-transparent"
->
-<div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_85%,rgba(99,102,241,0.28),transparent_50%)]" />
+      <section
+        id="contact"
+        className="relative py-24 bg-gradient-to-t from-transparent via-indigo-500/10 to-transparent"
+      >
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_85%,rgba(99,102,241,0.28),transparent_50%)]" />
 
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl p-8 md:p-12">
             <div className="text-center mb-10">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to <span className="text-indigo-500">Start?</span>
-            </h2>
-            <p className="text-gray-400">
-              Get in touch to discuss your project and receive a custom quote
+                Ready to <span className="text-indigo-500">Start?</span>
+              </h2>
+              <p className="text-gray-400">
+                Tell us about your website and we'll provide actionable
+                recommendations to improve speed, SEO, and lead generation.{" "}
+              </p>
+            </div>
+
+            <form className="space-y-6" onSubmit={handleSubmit} noValidate>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="block mb-2 text-sm font-medium"
+                  >
+                    Your Name
+                  </label>
+                  <input
+                    id="name"
+                    name="name"
+                    value={form.name}
+                    onChange={handleChange}
+                    type="text"
+                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+                    placeholder="John Doe"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block mb-2 text-sm font-medium"
+                  >
+                    Email Address
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    value={form.email}
+                    onChange={handleChange}
+                    type="email"
+                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+                    placeholder="you@example.com"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label
+                  htmlFor="website"
+                  className="block mb-2 text-sm font-medium"
+                >
+                  Website URL
+                </label>
+
+                <input
+                  id="website"
+                  name="website"
+                  value={form.website}
+                  onChange={handleChange}
+                  type="url"
+                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+                  placeholder="https://yourwebsite.com"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="service"
+                  className="block mb-2 text-sm font-medium"
+                >
+                  Service Interest
+                </label>
+                <select
+                  id="service"
+                  name="service"
+                  value={form.service}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+                >
+                  <option value="">Select a service</option>
+                  <option>Free Website Audit</option>
+                  <option>Not Sure / Need Advice</option>
+                  <option>Basic Static Page</option>
+                  <option>Professional Business Page</option>
+                  <option>Premium Conversion Page</option>
+                  <option>Basic E-Commerce</option>
+                  <option>Advanced Store</option>
+                  <option>Enterprise & Custom</option>
+                </select>
+              </div>
+
+              <div>
+                <label
+                  htmlFor="message"
+                  className="block mb-2 text-sm font-medium"
+                >
+                  Project Details
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={form.message}
+                  onChange={handleChange}
+                  rows="5"
+                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+                  placeholder="Share your website URL and tell us what you'd like to improve. (More leads, SEO, redesign, speed, etc.)"
+                />
+              </div>
+
+              {status && (
+                <div
+                  role="alert"
+                  className={`p-3 rounded-md text-sm ${
+                    status.type === "success"
+                      ? "bg-green-900/40 text-secondary-300 border border-secondary-700"
+                      : "bg-red-900/40 text-red-300 border border-red-700"
+                  }`}
+                >
+                  {status.message}
+                </div>
+              )}
+
+              <button
+                type="submit"
+                disabled={submitting}
+                className="w-full bg-indigo-500 hover:bg-indigo-600 disabled:opacity-60 text-white font-medium py-3 px-6 rounded-lg transition"
+              >
+                {submitting ? "Sending…" : "Send Message"}
+              </button>
+            </form>
+
+            <p className="mt-4 text-sm text-gray-400">
+              If you prefer, email us at{" "}
+              <a
+                className="text-indigo-500"
+                href="mailto:bradley@pixelpioneer.dev"
+              >
+                bradley@pixelpioneer.dev
+              </a>
+              .
             </p>
           </div>
-
-          <form className="space-y-6" onSubmit={handleSubmit} noValidate>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="name" className="block mb-2 text-sm font-medium">
-                  Your Name
-                </label>
-                <input
-                  id="name"
-                  name="name"
-                  value={form.name}
-                  onChange={handleChange}
-                  type="text"
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
-                  placeholder="John Doe"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block mb-2 text-sm font-medium">
-                  Email Address
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  value={form.email}
-                  onChange={handleChange}
-                  type="email"
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
-                  placeholder="you@example.com"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label htmlFor="service" className="block mb-2 text-sm font-medium">
-                Service Interest
-              </label>
-              <select
-                id="service"
-                name="service"
-                value={form.service}
-                onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
-              >
-                <option value="">Select a service</option>
-                <option>Basic Static Page</option>
-                <option>Professional Business Page</option>
-                <option>Premium Conversion Page</option>
-                <option>Basic E-Commerce</option>
-                <option>Advanced Store</option>
-                <option>Enterprise & Custom</option>
-              </select>
-            </div>
-
-            <div>
-              <label htmlFor="message" className="block mb-2 text-sm font-medium">
-                Project Details
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                value={form.message}
-                onChange={handleChange}
-                rows="5"
-                className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
-                placeholder="Tell us about your project..."
-              />
-            </div>
-
-            {status && (
-              <div
-                role="alert"
-                className={`p-3 rounded-md text-sm ${
-                  status.type === "success"
-                    ? "bg-green-900/40 text-secondary-300 border border-secondary-700"
-                    : "bg-red-900/40 text-red-300 border border-red-700"
-                }`}
-              >
-                {status.message}
-              </div>
-            )}
-
-            <button
-              type="submit"
-              disabled={submitting}
-              className="w-full bg-indigo-500 hover:bg-indigo-600 disabled:opacity-60 text-white font-medium py-3 px-6 rounded-lg transition"
-            >
-              {submitting ? "Sending…" : "Send Message"}
-            </button>
-          </form>
-
-          <p className="mt-4 text-sm text-gray-400">
-            If you prefer, email us at{" "}
-            <a className="text-indigo-500" href="mailto:bradley@pixelpioneer.dev">
-              bradley@pixelpioneer.dev
-            </a>
-            .
-          </p>
         </div>
-      </div>
-      <div className="pointer-events-none absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-[#0b0f1a]" />
-
-    </section>
+        <div className="pointer-events-none absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-[#0b0f1a]" />
+      </section>
     </AnimatedSection>
   );
 }
