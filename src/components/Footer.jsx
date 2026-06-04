@@ -10,7 +10,7 @@ return (
             <div className="flex flex-col md:flex-row justify-between items-center">
                 <div className="flex items-center space-x-2 mb-6 md:mb-0">
                     <a href="/" className="flex items-center space-x-2">
-                    <img src={logo} alt="PixelPioneer logo" className="h-10 w-auto" />
+                    <img src={logo} alt="PixelPioneer logo" className="h-20 w-auto" />
                     <span className="text-xl font-bold">PixelPioneer</span>
                     </a>
                 </div>
