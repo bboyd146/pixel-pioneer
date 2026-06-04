@@ -5,8 +5,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[100svh] flex items-center justify-center overflow-hidden bg-[#0b0f1a]"
-    >
+className="relative min-h-[calc(100svh-88px)] flex items-center justify-center overflow-hidden bg-[#0b0f1a]"    >
       <video
         className="absolute inset-0 z-0 w-full h-full object-cover"
         src={hero}

@@ -59,7 +59,7 @@ export default function App() {
 </div>
       <Nav />
 
-      <main className="relative z-10">
+      <main className="relative z-10 pt-[88px]">
         <Hero />
         <Portfolio />
         <Services />

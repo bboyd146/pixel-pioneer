@@ -99,8 +99,7 @@ export default function Portfolio() {
     <AnimatedSection>
       <section
         id="portfolio"
-        className="relative py-24 bg-gradient-to-b from-transparent via-indigo-500/5 to-transparent"
-      >
+className="relative pt-10 pb-24 bg-gradient-to-b from-[#0b0f1a] via-indigo-500/5 to-transparent"      >
         <div className="relative z-10 container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
