@@ -16,6 +16,9 @@ return (
                 <a href="#services" className="hover:text-indigo-500 transition">Services</a>
                 <a href="#pricing" className="hover:text-indigo-500 transition">Pricing</a>
                 <a href="#contact" className="hover:text-indigo-500 transition">Contact</a>
+                <a href="/website-design-houston" className="hover:text-indigo-500 transition">
+                    Houston Website Design
+                </a>
             </div>
 
             <button
