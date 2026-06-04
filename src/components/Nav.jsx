@@ -5,7 +5,7 @@ export default function Nav() {
 const [open, setOpen] = React.useState(false);
 
 return (
-    <nav className="border-b sticky border-gray-800 py-4 top-0 bg-gray-900/80 backdrop-blur-xl z-50 supports-[backdrop-filter]:bg-[#0b0f1a]/55">
+    <nav className="border-b sticky border-gray-800 py-4 top-0 bg-gray-900/80 backdrop-blur z-50 supports-[backdrop-filter]:bg-[#0b0f1a]/55">
         <div className="container mx-auto px-4 flex justify-between items-center">
             <div className="flex items-center space-x-2">
                 <a href="/" className="flex items-center space-x-2">
