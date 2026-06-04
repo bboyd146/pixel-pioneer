@@ -1,19 +1,27 @@
 import React from "react";
 import hero from "../assets/videos/hero.mp4";
+import heroPoster from "../assets/hero-poster.jpg";
 
 export default function Hero() {
   return (
     <section
       id="home"
 className="relative min-h-[calc(100svh-88px)] flex items-center justify-center overflow-hidden bg-[#0b0f1a]"    >
+  <img
+  src={heroPoster}
+  alt="hero background poster"
+  className="absolute inset-0 w-full h-full object-cover md:hidden"
+/>
+
       <video
-        className="absolute inset-0 z-0 w-full h-full object-cover"
+        className="absolute inset-0 z-0 w-full h-full object-cover hidden md:block"
         src={hero}
         autoPlay
         loop
         muted
         playsInline
-        preload="auto"
+        preload="metadata"
+        poster={heroPoster}
       />
 
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/40 via-black/60 to-[#0b0f1a]" />
