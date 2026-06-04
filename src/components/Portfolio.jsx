@@ -138,6 +138,8 @@ className="relative pt-10 pb-24 bg-gradient-to-b from-[#0b0f1a] via-indigo-500/5
                   <img
                     src={project.image}
                     alt={`${project.title} website preview`}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover opacity-90 hover:opacity-100 hover:scale-105 transition duration-500"
                   />
                 </div>
