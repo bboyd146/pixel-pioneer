@@ -34,7 +34,7 @@ export default function App() {
 <div className="relative min-h-screen bg-[#0b0f1a] text-white overflow-hidden texture-overlay">
       
 {/* Global atmospheric background */}
-<div className="pointer-events-none absolute inset-0 absolute inset-0 animate-[float_30s_linear_infinite]
+<div className="pointer-events-none absolute inset-0 animate-[float_30s_linear_infinite]
 ">
 
   {/* Base vertical gradient (prevents black bottom) */}
