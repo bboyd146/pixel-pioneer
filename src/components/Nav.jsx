@@ -17,7 +17,7 @@ export default function Nav() {
           <a href="/#services" className="hover:text-indigo-400 transition">Services</a>
           <a href="/#pricing" className="hover:text-indigo-400 transition">Pricing</a>
           <a href="/#contact" className="hover:text-indigo-400 transition">Contact</a>
-          <a href="/houston-web-design" className="hover:text-indigo-400 transition">
+          <a href="/houston-website-design" className="hover:text-indigo-400 transition">
             Houston Web Design
           </a>
         </div>
