@@ -4,6 +4,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import AnimatedSection from "../components/AnimatedSection";
 import { Helmet } from "react-helmet-async";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 const services = [
   "Custom website design",
@@ -37,6 +39,8 @@ export default function WebsiteDesignHouston() {
     />
   </Helmet>
 
+  <div className="relative min-h-screen bg-[#0b0f1a] text-white overflow-hidden texture-overlay">
+    <Nav />
     <main className="bg-[#0b0f1a] text-white overflow-hidden">
       {/* HERO */}
       <section className="relative min-h-[85vh] flex items-center bg-gradient-to-b from-indigo-500/10 via-transparent to-transparent">
@@ -250,6 +254,9 @@ export default function WebsiteDesignHouston() {
         </section>
       </AnimatedSection>
     </main>
+
+        <Footer />
+  </div>
     </>
   );
 }
