@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/pixelpioneerlogo.png";
+import logo from "../assets/pixelpioneerlogo.webp";
 
 export default function Footer() {
     const year = new Date().getFullYear();

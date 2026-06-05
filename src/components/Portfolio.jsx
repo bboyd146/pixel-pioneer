@@ -3,9 +3,9 @@
 import React from "react";
 import AnimatedSection from "./AnimatedSection";
 import { motion } from "framer-motion";
-import alln1pestcontrol from "../assets/projects/alln1pestcontrol.png";
-import gibsontaxcpa from "../assets/projects/gibsontaxcpa.png";
-import flatfeeconsulting from "../assets/projects/flatfeeconsulting.png";
+import alln1pestcontrol from "../assets/projects/optimized/alln1.webp";
+import gibsontaxcpa from "../assets/projects/optimized/gibson.webp";
+import flatfeeconsulting from "../assets/projects/optimized/flatfee.webp";
 import { g } from "framer-motion/client";
 
 const containerVariants = {

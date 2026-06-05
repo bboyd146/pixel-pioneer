@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/pixelpioneerlogo.png";
+import logo from "../assets/pixelpioneerlogo.webp";
 
 export default function Nav() {
   const [open, setOpen] = React.useState(false);
