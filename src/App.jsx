@@ -9,6 +9,9 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import AuditExpectations from "./components/AuditExpectations";
 import Services from "./components/Services";
 import Pricing from "./components/Pricing";
+import NoWebsiteYet from "./components/NoWebsiteYet";
+import WhyProfessional from "./components/WhyProfessional";
+import FAQ from "./components/FAQ";
 import FreeAudit from "./components/FreeAudit";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -63,10 +66,13 @@ export default function App() {
         <Portfolio />
         <Services />
         <WhyChooseUs />
+        <NoWebsiteYet />
+        <WhyProfessional />
         {/* <Commerce /> */}
         <Pricing />
         <FreeAudit />
         <AuditExpectations />
+        <FAQ />
         <Contact />
         <Footer />
       </main>
