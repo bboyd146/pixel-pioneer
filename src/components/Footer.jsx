@@ -81,6 +81,14 @@ export default function Footer() {
                             </li>
 
                             <li>
+                                <a href="/website-design-katy-tx"
+                                className="hover:text-indigo-500 transition"
+                                >
+                                Website Design Katy TX
+                                </a>
+                            </li>
+
+                            <li>
                                 <a
                                     href="/#free-audit"
                                     className="hover:text-indigo-500 transition"
