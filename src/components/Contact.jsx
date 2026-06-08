@@ -62,17 +62,18 @@ export default function Contact() {
 
       setSubmitting(false);
       setForm({ name: "", email: "", website: "", service: "", message: "" });
-      setStatus({
-        type: "success",
-        message: "Thanks — your message was sent!",
-      });
+        window.location.href = "/contact-success";
+      // setStatus({
+      //   type: "success",
+      //   message: "Thanks — your message was sent!",
+      // });
     } catch (err) {
       console.error("Submit error:", err);
       setSubmitting(false);
       setStatus({
         type: "error",
         message:
-          "There was an error submitting the form. You can email us at bradl@pixelpioneer.dev.",
+          "There was an error submitting the form. You can email us at bradley@pixelpioneer.dev.",
       });
     }
   };
