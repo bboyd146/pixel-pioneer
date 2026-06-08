@@ -26,9 +26,10 @@ createRoot(document.getElementById("root")).render(
           path="/website-design-katy-tx"
           element={<WebsiteDesignKaty />}
         />
-        <Route path="/contact-success"
-         element={<ContactSuccess />} 
-         />
+        <Route 
+          path="/contact-success"
+          element={<ContactSuccess />} 
+        />
       </Routes>
     </BrowserRouter>
     </HelmetProvider>
