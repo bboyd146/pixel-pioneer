@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import WebsiteDesignHouston from "./pages/WebsiteDesignHouston";
 import WebsiteDesignKaty from "./pages/WebsiteDesignKaty";
+import ContactSuccess from "./pages/ContactSuccess";
 import { HelmetProvider } from "react-helmet-async";
 import ScrollToHash from "./components/ScrollToHash";
 import "./index.css";
@@ -25,6 +26,9 @@ createRoot(document.getElementById("root")).render(
           path="/website-design-katy-tx"
           element={<WebsiteDesignKaty />}
         />
+        <Route path="/contact-success"
+         element={<ContactSuccess />} 
+         />
       </Routes>
     </BrowserRouter>
     </HelmetProvider>
