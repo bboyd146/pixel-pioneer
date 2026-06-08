@@ -141,6 +141,142 @@ export default function WebsiteDesignKaty() {
           </AnimatedSection>
 
           <AnimatedSection>
+  <section className="py-24 bg-gradient-to-b from-transparent via-purple-500/5 to-transparent">
+    <div className="container mx-auto px-4 max-w-4xl">
+      <h2 className="text-3xl md:text-4xl font-bold mb-8">
+        Website Design Services in Katy, TX
+      </h2>
+
+      <p className="text-gray-400 text-lg mb-6">
+        Katy is one of the fastest-growing areas near Houston, and more local
+        businesses are competing for attention online. A professional website
+        helps your business look credible, explain your services clearly, and
+        turn visitors into real leads.
+      </p>
+
+      <p className="text-gray-400 text-lg mb-6">
+        Pixel Pioneer builds websites for Katy businesses with mobile-first
+        design, local SEO structure, fast loading performance, and clear calls
+        to action.
+      </p>
+
+      <p className="text-gray-400 text-lg">
+        Whether you are starting from scratch or improving an existing website,
+        we help create a strong online foundation for long-term growth.
+      </p>
+    </div>
+  </section>
+</AnimatedSection>
+
+<AnimatedSection>
+  <section className="py-24">
+    <div className="container mx-auto px-4">
+      <div className="max-w-3xl mx-auto text-center mb-14">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          Websites for Katy Service Businesses
+        </h2>
+
+        <p className="text-gray-400">
+          We focus on practical websites for businesses that need more calls,
+          quote requests, appointments, and customer trust.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+        {[
+          "Contractors",
+          "Accountants",
+          "Pest Control",
+          "Landscapers",
+          "Cleaning Services",
+          "Local Service Businesses",
+        ].map((industry) => (
+          <div
+            key={industry}
+            className="bg-white/5 border border-white/10 rounded-lg p-5 text-center"
+          >
+            {industry}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</AnimatedSection>
+
+<AnimatedSection>
+  <section className="py-20 bg-gradient-to-b from-transparent via-indigo-500/5 to-transparent">
+    <div className="container mx-auto px-4">
+      <div className="max-w-4xl mx-auto text-center bg-white/5 border border-white/10 rounded-2xl p-10">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          Also Serving Houston Businesses
+        </h2>
+
+        <p className="text-gray-400 mb-8">
+          Pixel Pioneer also provides website design and web development
+          services for businesses across Houston and surrounding areas.
+        </p>
+
+        <a
+          href="/houston-website-design"
+          className="inline-flex text-indigo-400 hover:text-indigo-300 font-medium"
+        >
+          View Houston Website Design Services →
+        </a>
+      </div>
+    </div>
+  </section>
+</AnimatedSection>
+
+<AnimatedSection>
+  <section className="py-24">
+    <div className="container mx-auto px-4 max-w-4xl">
+      <div className="text-center mb-14">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          Katy Website Design FAQs
+        </h2>
+
+        <p className="text-gray-400">
+          Common questions from Katy business owners.
+        </p>
+      </div>
+
+      <div className="space-y-6">
+        {[
+          {
+            q: "Do I need a website for my Katy business?",
+            a: "Yes. Most customers search online before choosing a business. A professional website helps establish trust, explain your services, and generate leads.",
+          },
+          {
+            q: "How much does website design cost?",
+            a: "Pricing depends on your goals, number of pages, features, and project scope. Pixel Pioneer offers transparent website packages for small businesses.",
+          },
+          {
+            q: "Can you redesign my current website?",
+            a: "Yes. We can improve your design, mobile experience, speed, SEO structure, contact forms, and overall conversion flow.",
+          },
+          {
+            q: "Do you offer SEO?",
+            a: "Yes. Every website is built with SEO basics in mind, including page structure, headings, metadata, mobile performance, and local keyword targeting.",
+          },
+          {
+            q: "How long does a website take?",
+            a: "Most small business websites can be completed within a few weeks depending on content, revisions, and project complexity.",
+          },
+        ].map((faq) => (
+          <div
+            key={faq.q}
+            className="bg-white/5 border border-white/10 rounded-xl p-6"
+          >
+            <h3 className="text-xl font-bold mb-3">{faq.q}</h3>
+            <p className="text-gray-400">{faq.a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</AnimatedSection>
+
+          <AnimatedSection>
             <section className="py-24">
               <div className="container mx-auto px-4 max-w-4xl text-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
