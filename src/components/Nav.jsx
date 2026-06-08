@@ -20,6 +20,9 @@ export default function Nav() {
           <a href="/houston-website-design" className="hover:text-indigo-400 transition">
             Houston Web Design
           </a>
+          <a href="/website-design-katy-tx" className="hover:text-indigo-400 transition">
+            Katy Web Design
+          </a>
         </div>
 
         <button
