@@ -54,6 +54,7 @@ export default function Nav() {
           <a href="/#pricing" onClick={() => setOpen(false)} className="px-2 py-2 rounded hover:bg-white/5 hover:text-indigo-400 transition">Pricing</a>
           <a href="/#contact" onClick={() => setOpen(false)} className="px-2 py-2 rounded hover:bg-white/5 hover:text-indigo-400 transition">Contact</a>
           <a href="/houston-website-design" onClick={() => setOpen(false)} className="px-2 py-2 rounded hover:bg-white/5 hover:text-indigo-400 transition">Houston Web Design</a>
+          <a href="/website-design-katy-tx" onClick={() => setOpen(false)} className="px-2 py-2 rounded hover:bg-white/5 hover:text-indigo-400 transition">Katy Web Design</a>
         </div>
       </div>
     </header>
