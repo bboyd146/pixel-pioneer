@@ -17,12 +17,15 @@ const services = [
 ];
 
 const industries = [
-  "Pest control",
-  "Tax & accounting firms",
+  "Accountants",
+  "Pest Control",
   "Contractors",
-  "Landscaping companies",
-  "Cleaning services",
-  "Barbershops & salons",
+  "Landscapers",
+  "Law Firms",
+  "Medical Practices",
+  "Cleaning Services",
+  "Consultants",
+  "Small Businesses",
 ];
 
 export default function WebsiteDesignHouston() {
@@ -39,10 +42,8 @@ export default function WebsiteDesignHouston() {
     />
   </Helmet>
 
-  <div className="relative min-h-screen bg-[#0b0f1a] text-white overflow-hidden texture-overlay">
-    <Nav />
-    <main className="bg-[#0b0f1a] text-white overflow-hidden">
-      {/* HERO */}
+<div className="relative min-h-screen bg-[#0b0f1a] text-white overflow-x-hidden texture-overlay">    <Nav />
+<main className="relative z-10 bg-[#0b0f1a] text-white overflow-x-hidden pt-[88px]">      {/* HERO */}
       <section className="relative min-h-[85vh] flex items-center bg-gradient-to-b from-indigo-500/10 via-transparent to-transparent">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(99,102,241,0.25),transparent_45%)]" />
 
@@ -161,6 +162,62 @@ export default function WebsiteDesignHouston() {
         </section>
       </AnimatedSection>
 
+      {/* SEO COPY */}
+<AnimatedSection>
+  <section className="py-24 bg-gradient-to-b from-transparent via-purple-500/5 to-transparent">
+    <div className="container mx-auto px-4 max-w-4xl">
+      <h2 className="text-3xl md:text-4xl font-bold mb-8">
+        Website Design Services in Houston, TX
+      </h2>
+
+      <p className="text-gray-400 text-lg mb-6">
+        Houston is one of the largest and most competitive business markets in
+        the country. If your website looks outdated, loads slowly, or fails to
+        convert visitors into customers, potential clients may choose a
+        competitor before ever contacting you.
+      </p>
+
+      <p className="text-gray-400 text-lg mb-6">
+        Pixel Pioneer helps Houston businesses improve their online presence
+        through modern website design, local SEO optimization, mobile-first
+        development, and conversion-focused user experiences.
+      </p>
+
+      <p className="text-gray-400 text-lg">
+        Whether you're launching a new business, redesigning an existing
+        website, or looking for ongoing website maintenance, we help create
+        websites built for long-term growth.
+      </p>
+    </div>
+  </section>
+</AnimatedSection>
+
+{/* KATY INTERNAL LINK */}
+<AnimatedSection>
+  <section className="py-20 bg-gradient-to-b from-transparent via-indigo-500/5 to-transparent">
+    <div className="container mx-auto px-4">
+      <div className="max-w-4xl mx-auto text-center bg-white/5 border border-white/10 rounded-2xl p-10">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          Serving Katy and Surrounding Communities
+        </h2>
+
+        <p className="text-gray-400 mb-8">
+          In addition to Houston, Pixel Pioneer provides website design and web
+          development services throughout Katy, Cypress, Sugar Land, Richmond,
+          and nearby areas.
+        </p>
+
+        <a
+          href="/katy-website-design"
+          className="inline-flex text-indigo-400 hover:text-indigo-300 font-medium"
+        >
+          View Katy Website Design Services →
+        </a>
+      </div>
+    </div>
+  </section>
+</AnimatedSection>
+
       {/* INDUSTRIES */}
       <AnimatedSection>
         <section className="py-24 bg-gradient-to-b from-transparent via-purple-500/5 to-transparent">
@@ -226,6 +283,56 @@ export default function WebsiteDesignHouston() {
           </div>
         </section>
       </AnimatedSection>
+
+      {/* FAQ */}
+<AnimatedSection>
+  <section className="py-24">
+    <div className="container mx-auto px-4 max-w-4xl">
+      <div className="text-center mb-14">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          Houston Website Design FAQs
+        </h2>
+
+        <p className="text-gray-400">
+          Common questions from Houston business owners.
+        </p>
+      </div>
+
+      <div className="space-y-6">
+        {[
+          {
+            q: "How much does website design cost in Houston?",
+            a: "Pricing depends on project scope, functionality, number of pages, and business goals. We provide transparent pricing and recommendations based on your needs.",
+          },
+          {
+            q: "Do you work with small businesses?",
+            a: "Yes. Most of our websites are built for small businesses, local service companies, and professional firms.",
+          },
+          {
+            q: "Can you improve my current website?",
+            a: "Absolutely. We can redesign your website, improve SEO, increase loading speed, and create better conversion paths.",
+          },
+          {
+            q: "Do you provide website maintenance?",
+            a: "Yes. We offer ongoing website maintenance, updates, security monitoring, and support.",
+          },
+          {
+            q: "Can you help my website rank higher on Google?",
+            a: "Yes. Every website is built using SEO best practices and we can provide ongoing optimization strategies.",
+          },
+        ].map((faq) => (
+          <div
+            key={faq.q}
+            className="bg-white/5 border border-white/10 rounded-xl p-6"
+          >
+            <h3 className="text-xl font-bold mb-3">{faq.q}</h3>
+            <p className="text-gray-400">{faq.a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</AnimatedSection>
 
       {/* CTA */}
       <AnimatedSection>
