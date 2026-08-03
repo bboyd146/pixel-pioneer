@@ -39,10 +39,10 @@ export default function Footer() {
 
                             <li>
                                 <a
-                                    href="/#portfolio"
+                                    href="/#reviews"
                                     className="hover:text-indigo-500 transition"
                                 >
-                                    Portfolio
+                                    Reviews
                                 </a>
                             </li>
 
