@@ -47,7 +47,7 @@ className="relative min-h-[calc(100svh-88px)] flex items-center justify-center o
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a
-            href="/#portfolio"
+            href="/#reviews"
             className="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-3 rounded-lg font-medium transition shadow-lg shadow-indigo-500/30"
           >
             View Our Work
