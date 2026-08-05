@@ -1,8 +1,12 @@
 // src/components/Portfolio.jsx
 
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
+
+const JOTFORM_SCRIPT_ID = "jotform-reviews-widget-script";
+const JOTFORM_WIDGET_ID =
+  "JFWebsiteWidget-019fc98f1000700088d0641df2e4862bdacb";
 
 const dividerVariants = {
   hidden: {
@@ -20,20 +24,35 @@ const dividerVariants = {
 };
 
 export default function Portfolio() {
+  useEffect(() => {
+    const existingScript = document.getElementById(JOTFORM_SCRIPT_ID);
+
+    if (existingScript) {
+      return;
+    }
+
+    const script = document.createElement("script");
+
+    script.id = JOTFORM_SCRIPT_ID;
+    script.src =
+      "https://www.jotform.com/website-widgets/embed/019fc98f1000700088d0641df2e4862bdacb";
+    script.async = true;
+
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <AnimatedSection>
       <section
         id="reviews"
         className="relative overflow-hidden bg-gradient-to-b from-[#0b0f1a] via-indigo-500/5 to-transparent pt-10 pb-24"
       >
-        {/* Background glow */}
         <div
           aria-hidden="true"
           className="pointer-events-none absolute left-1/2 top-24 h-72 w-72 -translate-x-1/2 rounded-full bg-indigo-500/10 blur-3xl"
         />
 
         <div className="relative z-10 container mx-auto px-4">
-          {/* Section heading */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +75,6 @@ export default function Portfolio() {
             </p>
           </motion.div>
 
-          {/* Divider */}
           <motion.div
             variants={dividerVariants}
             initial="hidden"
@@ -65,7 +83,6 @@ export default function Portfolio() {
             className="mx-auto mb-14 h-px w-full max-w-sm origin-left bg-gradient-to-r from-transparent via-indigo-500/60 to-transparent shadow-[0_0_20px_rgba(99,102,241,0.4)]"
           />
 
-          {/* Elfsight widget container */}
           <motion.div
             initial={{ opacity: 0, y: 32 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -73,13 +90,9 @@ export default function Portfolio() {
             transition={{ duration: 0.65, ease: "easeOut" }}
             className="relative mx-auto max-w-6xl rounded-2xl border border-white/10 bg-white/[0.03] p-4 shadow-2xl backdrop-blur-xl sm:p-6 md:p-8"
           >
-            <div
-              className="elfsight-app-4b13dddf-4de7-4147-8268-393305cb7253"
-              data-elfsight-app-lazy
-            />
+            <div id={JOTFORM_WIDGET_ID} />
           </motion.div>
 
-          {/* CTA */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
