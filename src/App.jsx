@@ -21,19 +21,6 @@ export default function App() {
     feather.replace();
   }, []);
 
-  // useEffect(() => {
-  //   const anchors = document.querySelectorAll('a[href^="#"]');
-  //   const handler = (e) => {
-  //     const href = e.currentTarget.getAttribute("href");
-  //     if (!href || href === "#") return;
-  //     e.preventDefault();
-  //     const el = document.querySelector(href);
-  //     if (el) el.scrollIntoView({ behavior: "smooth" });
-  //   };
-  //   anchors.forEach((a) => a.addEventListener("click", handler));
-  //   return () =>
-  //     anchors.forEach((a) => a.removeEventListener("click", handler));
-  // }, []);
 
   <Helmet>
     <title>Houston Web Developer & Website Design | Pixel Pioneer</title>
